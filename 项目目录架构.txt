@@ -1,0 +1,31 @@
+dailyPaper/
+├── main.py                # 程序入口（启动应用、初始化核心组件）
+├── config/                # 配置模块（系统配置、样式配置）
+│   ├── __init__.py
+│   ├── app_config.py      # 应用配置（AK/SK、API_KEY、数据库路径等）
+│   └── style_config.py    # 全局样式（字体、按钮、布局样式）
+├── core/                  # 核心业务逻辑（解耦的核心层）
+│   ├── __init__.py
+│   ├── ai_client.py       # AI调用封装（火山方舟客户端、生成逻辑）
+│   ├── generator.py       # 日报生成核心（线程管理、流式处理）
+│   └── template_manager.py# 模板管理（保存/加载/多模板适配）
+├── db/                    # 数据存储层（SQLite）
+│   ├── __init__.py
+│   ├── db_init.py         # 数据库初始化（表结构）
+│   └── history_dao.py     # 历史记录CRUD、模板存储CRUD
+├── ui/                    # UI层（页面、组件、扩展窗口）
+│   ├── __init__.py
+│   ├── main_window.py     # 主窗口（双Tab、生成/清空/复制按钮）
+│   ├── config_window.py   # 系统配置窗口（AK/SK、API_KEY配置）
+│   ├── history_window.py  # 历史记录窗口（列表、复制、删除）
+│   ├── template_window.py # 模板管理窗口（保存/加载）
+│   └── components/        # 通用UI组件（可选，如自定义按钮、进度条）
+│       ├── __init__.py
+│       └── custom_buttons.py
+├── utils/                 # 工具类（Excel导出、日志、剪贴板等）
+│   ├── __init__.py
+│   ├── excel_exporter.py  # Excel导出功能
+│   ├── logger.py          # 日志工具（可选，补充print）
+│   └── common_utils.py    # 通用工具（时间格式化、剪贴板、路径处理）
+└── resources/             # 资源文件（可选，如图标、默认模板文件）
+    └── default_template.txt
