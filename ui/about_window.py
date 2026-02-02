@@ -90,7 +90,7 @@ class AboutWindow(QDialog):
         info_layout.setAlignment(Qt.AlignTop)
 
         # 作者信息
-        author_label = QLabel('<strong>开发作者：</strong>刘芝伟')
+        author_label = QLabel('<strong>开发作者：</strong>刘芝伟1111')
         author_label.setTextFormat(Qt.RichText)
         author_label.setFont(BOLD_FONT)
         author_label.setWordWrap(True)
