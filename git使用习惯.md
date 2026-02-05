@@ -15,7 +15,7 @@
      - macOS：`/usr/bin/git`；
    - 点击「Test」，显示「Git executed successfully」即配置完成。
     
-git config --global core.sshCommand "ssh -i D:\D:\Program Files\GitSSH\.ssh\id_ed25519 -o UserKnownHostsFile=D:\GitSSH\.ssh\known_hosts"
+
 
 ## 第一步：将PyCharm项目上传到Gitee（首次上传）
 ### 步骤1：初始化本地Git仓库
